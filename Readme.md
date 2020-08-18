@@ -11,8 +11,10 @@ You **don't need to install `mongoose` or `dotenv`**, they are already inscribed
 
 #### Thanks.
 
-## See below example to use `mongo-quick` for currently available features.
+### See below example to use `mongo-quick` for currently available features.
 ### 😆BOOM TAM TAM😂 - Lazy means it needs await before it. :D
+
+## ## Example 1:
 ```js
 import * as mq from "mongo-quick";
 
@@ -39,3 +41,40 @@ import * as mq from "mongo-quick";
 
 })();
 ```
+
+## Example 2:
+
+```js
+import * as mq from "mongo-quick";
+
+(async function () {
+  const itemCollection2020 = mq.createCollection("itemCollection2020", {
+    Dimensions: Array,
+    Author: String,
+    Specialization: String,
+    Angle: Object,
+    Sides: Object,
+    Edges: Number,
+    Roundness: String,
+    // Note order is IMPORTANT, coz piped method will save the data with same order of the keys of the schema. :)
+    // Try keeping Arrays at top, coz mongodb does that too,  you can obviouly ignore this tip though.
+  });
+
+  console.log(await mq.connectMongoDb_Lazy_InLog());
+
+  await mq.saveToCollection_Lazy_Piped
+    (
+      itemCollection2020,
+      [22, 33, 444],
+      "Ramanujan",
+      "Mathematician",
+      { x: 20, y: 30, z: 50 },
+      { x: 10, y: 8 },
+      4,
+      "Completely Round"
+    );
+
+  mq.closeConnection();
+
+})();
+````
