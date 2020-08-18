@@ -4,7 +4,7 @@ The motive of this library is to just jump start with moongoose without much cru
 This library is in developement state, so use it for just testing and suggest some features. In future, I'll push the code to github, so we can make this better by collaboration.
 
 #### • Install this library via, `npm i mongo-quick`
-#### • Define a .env file and put MONGODB_URI there(otherwise it won't connect to mongodb).
+#### • Define a .env file and put `MONGO_DB_URI=mongodb://localhost/testdb` there(otherwise it won't connect to mongodb). I have set it up with localdb, but you can use any online/offline mongodb.
 
 ## Alert:
 You **don't need to install `mongoose` or `dotenv`**, they are already inscribed this `mongo-quick` library.
