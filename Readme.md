@@ -7,7 +7,7 @@ This library is in developement state, so use it for just testing and suggest so
 #### • Define a .env file and put MONGODB_URI there(otherwise it won't connect to mongodb).
 
 ## Alert:
-You **don't need to install `mongoose` or `dotenv`**, they are already inscribed this `mongo-quick` library..
+You **don't need to install `mongoose` or `dotenv`**, they are already inscribed this `mongo-quick` library.
 
 #### Thanks.
 
