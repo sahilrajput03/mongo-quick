@@ -14,7 +14,7 @@ You **don't need to install `mongoose` or `dotenv`**, they are already inscribed
 ### See below example to use `mongo-quick` for currently available features.
 ### 😆BOOM TAM TAM😂 - Lazy means it needs await before it. :D
 
-## ## Example 1:
+##  Example 1:
 ```js
 import * as mq from "mongo-quick";
 
