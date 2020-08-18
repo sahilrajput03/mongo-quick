@@ -1,6 +1,6 @@
 {
   "name": "mongo-quick",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashleygwilliams/my_package.git"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "mongoose": "^5.10.0"
