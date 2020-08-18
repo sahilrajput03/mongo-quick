@@ -31,3 +31,16 @@ export async function saveToCollection_Lazy(collection, data) {
 export const createCollection = (collectionName, schemaObject) => mongoose.model(collectionName, new mongoose.Schema(schemaObject));
 export const deleteCollection_Lazy_InLog = (collection) => collection.deleteMany({})
 export const closeConnection = () => mongoose.connection.close()
+export const saveToCollection_Lazy_Piped = async (collection, ...val) => {
+  const pipe = (collection, ...val) => {
+    console.log(val)
+    let objectx = JSON.parse(JSON.stringify(collection.schema.obj))
+    let schema = Object.keys(collection.schema.obj)
+    let i = 0
+    for (let key of schema) {
+      objectx[key] = val[i++]
+    }
+    return objectx
+  }
+  return await saveToCollection_Lazy(collection, pipe(collection, ...val))
+};
