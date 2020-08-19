@@ -10,6 +10,8 @@ This library is in developement state, so use it for just testing and suggest so
 ```echo MONGO_DB_URI=mongodb://localhost/testdb >> .env```
 
 ## Alert:
+You  need to use "type": "module" in your package.json file, to use the import keyword in your project(for importing mongo-quick like in examples below).
+ 
 You **don't need to install `mongoose` or `dotenv`**, they are already inscribed this `mongo-quick` library.
 
 #### Thanks.
