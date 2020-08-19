@@ -5,6 +5,8 @@ This library is in developement state, so use it for just testing and suggest so
 
 #### • Install this library via, `npm i mongo-quick`
 #### • Define a .env file and put `MONGO_DB_URI=mongodb://localhost/testdb` there(otherwise it won't connect to mongodb). I have set it up with localdb, but you can use any online/offline mongodb.
+**Quick tip:**
+`echo MONGO_DB_URI=mongodb://localhost/testdb >> .env`
 
 ## Alert:
 You **don't need to install `mongoose` or `dotenv`**, they are already inscribed this `mongo-quick` library.

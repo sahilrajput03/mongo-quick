@@ -21,7 +21,9 @@ export async function connectMongoDb_Lazy_InLog() {
   return 'THANKS: For awaiting connectMongoDb().\n--------------'
 }
 export async function saveToCollection_Lazy(collection, data) {
-  if (typeof collection == "string") collection = useCollection(collection)
+  if (typeof collection == "string"){
+    collection = useCollection(collection)
+  } 
   try {
     const savedData = await new collection(data).save();
     console.log("INFO: ", savedData);
@@ -29,12 +31,17 @@ export async function saveToCollection_Lazy(collection, data) {
     console.log(`==NAKED ERROR== ${error.message} ==produced by== ${error.name}.`);
   }
 }
-export const useCollection = (collectionName, schemaObject) => mongoose.model(collectionName, new mongoose.Schema(schemaObject, schemaObject || { strict: false }));
+
+export const useCollection = (collectionName, schemaObject) => {
+  return mongoose.model(collectionName, new mongoose.Schema(schemaObject, schemaObject || { strict: false }));
+};
+
 export const deleteCollection_Lazy_InLog = (collection) => {
   if (typeof collection == "string") collection = useCollection(collection)
   return collection.deleteMany({});
 }
 export const closeConnection = () => mongoose.connection.close()
+
 export const saveToCollection_Lazy_Piped = async (collection, ...val) => {
   const pipe = (collection, ...val) => {
     console.log(val)
