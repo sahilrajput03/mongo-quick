@@ -77,7 +77,7 @@ import * as mq from "mongo-quick";
   mq.closeConnection();
 
 })();
-````
+```
 ## Example 3:
 
 ```js
