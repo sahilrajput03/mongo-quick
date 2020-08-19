@@ -30,7 +30,10 @@ export async function saveToCollection_Lazy(collection, data) {
   }
 }
 export const useCollection = (collectionName, schemaObject) => mongoose.model(collectionName, new mongoose.Schema(schemaObject, schemaObject || { strict: false }));
-export const deleteCollection_Lazy_InLog = (collection) => collection.deleteMany({})
+export const deleteCollection_Lazy_InLog = (collection) => {
+  if (typeof collection == "string") collection = useCollection(collection)
+  return collection.deleteMany({});
+}
 export const closeConnection = () => mongoose.connection.close()
 export const saveToCollection_Lazy_Piped = async (collection, ...val) => {
   const pipe = (collection, ...val) => {
