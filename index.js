@@ -28,7 +28,7 @@ export async function saveToCollection_Lazy(collection, data) {
     console.log(`==NAKED ERROR== ${error.message} ==produced by== ${error.name}.`);
   }
 }
-export const createCollection = (collectionName, schemaObject) => mongoose.model(collectionName, new mongoose.Schema(schemaObject));
+export const useCollection = (collectionName, schemaObject) => mongoose.model(collectionName, new mongoose.Schema(schemaObject, schemaObject || { strict: false }));
 export const deleteCollection_Lazy_InLog = (collection) => collection.deleteMany({})
 export const closeConnection = () => mongoose.connection.close()
 export const saveToCollection_Lazy_Piped = async (collection, ...val) => {

@@ -19,7 +19,7 @@ You **don't need to install `mongoose` or `dotenv`**, they are already inscribed
 import * as mq from "mongo-quick";
 
 (async function () {
-  const itemCollection2020 = mq.createCollection("itemCollection2020", {
+  const itemCollection2020 = mq.useCollection("itemCollection2020", {
     itemModel: String, itemAuthor: String
     // So, ^^^^^^ here goes your mongoose schema for a model.
   })
@@ -48,7 +48,7 @@ import * as mq from "mongo-quick";
 import * as mq from "mongo-quick";
 
 (async function () {
-  const itemCollection2020 = mq.createCollection("itemCollection2020", {
+  const itemCollection2020 = mq.useCollection("itemCollection2020", {
     Dimensions: Array,
     Author: String,
     Specialization: String,
@@ -78,3 +78,30 @@ import * as mq from "mongo-quick";
 
 })();
 ````
+## Example 3:
+
+```js
+
+import * as mq from "mongo-quick";
+
+(async function () {
+  const itemCollection2020 = mq.useCollection("itemCollection2020");
+
+  console.log(await mq.connectMongoDb_Lazy_InLog());
+
+  await mq.saveToCollection_Lazy(itemCollection2020, {
+    quality: "top notch",
+    age: "ancient-era",
+    style: [1, 2, 3, 4],
+    behaviour: { ca: 20, ma: 40 },
+    sharpness: 44,
+    coolness: true,
+  })
+  // console.log(await mq.deleteCollection_Lazy_InLog(itemCollection2020))
+
+  mq.closeConnection();
+
+})();
+
+
+```
