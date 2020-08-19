@@ -12,7 +12,7 @@ You **don't need to install `mongoose` or `dotenv`**, they are already inscribed
 #### Thanks.
 
 ### See below example to use `mongo-quick` for currently available features.
-### 😆BOOM TAM TAM😂 - Lazy means it needs await before it. :D
+### BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
 
 ##  Example 1:
 ```js
@@ -103,5 +103,46 @@ import * as mq from "mongo-quick";
 
 })();
 
+```
+## Example 4:
+
+```js
+import * as mq from "mongo-quick";
+
+(async function () {
+
+  console.log(await mq.connectMongoDb_Lazy_InLog());
+
+  await mq.saveToCollection_Lazy("itemCollection2020", {
+    // Adding data to collection by ^^^ providing collection name as parameter.
+    quality: "top notch",
+    age: "ancient-era",
+    style: [1, 2, 3, 4],
+    behaviour: { ca: 20, ma: 40 },
+    sharpness: 44,
+    coolness: true,
+  })
+
+mq.closeConnection();
+
+})();
+
+```
+
+## Example 5:
+
+```js
+import * as mq from "mongo-quick";
+
+(async function () {
+
+  console.log(await mq.connectMongoDb_Lazy_InLog());
+
+  console.log(await mq.deleteCollection_Lazy_InLog("itemCollection2020"))
+  // Deleting collection by passing collection name as ^^^ parameter.
+
+  mq.closeConnection();
+
+})();
 
 ```
