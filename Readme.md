@@ -1,26 +1,33 @@
 # mongo-quick (@development stage)
-The motive of this library is to just jump start with moongoose without much crucial  logging for saving data, deleting collections, making models, etc. 
+
+The motive of this library is to just jump start with moongoose without much crucial  logging for saving data, deleting collections, making models, etc.
 
 This library is in developement state, so use it for just testing and suggest some features. In future, I'll push the code to github, so we can make this better by collaboration.
 
-#### • Install this library via, `npm i mongo-quick`
-#### • Define a .env file and put `MONGO_DB_URI=mongodb://localhost/testdb` there(otherwise it won't connect to mongodb). I have set it up with localdb, but you can use any online/offline mongodb.
+## • Install this library via, `npm i mongo-quick`
+
+## • Define a .env file and put `MONGO_DB_URI=mongodb://localhost/testdb` there(otherwise it won't connect to mongodb). I have set it up with localdb, but you can use any online/offline mongodb
+
 **Quick tip:**
 
 ```echo MONGO_DB_URI=mongodb://localhost/testdb >> .env```
 
-## Alert:
+## Alert
+
 You  need to use "type": "module" in your package.json file, to use the import keyword in your project(for importing mongo-quick like in examples below).
- 
+
 You **don't need to install `mongoose` or `dotenv`**, they are already inscribed this `mongo-quick` library.
 
-#### Thanks.
+### Thanks
 
-# Usage -
-### Below example use `mongo-quick` for currently available features.
+## Usage -
+
+## Below example use `mongo-quick` for currently available features
+
 ### BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
 
-##  Example 1:
+## Example 1
+
 ```js
 import * as mq from "mongo-quick";
 
@@ -48,7 +55,7 @@ import * as mq from "mongo-quick";
 })();
 ```
 
-## Example 2:
+## Example 2
 
 ```js
 import * as mq from "mongo-quick";
@@ -84,7 +91,8 @@ import * as mq from "mongo-quick";
 
 })();
 ```
-## Example 3:
+
+## Example 3
 
 ```js
 
@@ -110,7 +118,8 @@ import * as mq from "mongo-quick";
 })();
 
 ```
-## Example 4:
+
+## Example 4
 
 ```js
 import * as mq from "mongo-quick";
@@ -135,7 +144,7 @@ mq.closeConnection();
 
 ```
 
-## Example 5:
+## Example 5
 
 ```js
 import * as mq from "mongo-quick";
