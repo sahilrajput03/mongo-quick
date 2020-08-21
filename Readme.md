@@ -1,12 +1,12 @@
 # mongo-quick (@development stage)
 
-The motive of this library is to just jump start with moongoose without much crucial  logging for saving data, deleting collections, making models, etc.
+The motive of this library is to just jump start with mongoose without much crucial  logging for saving data, deleting collections, making models, etc.
 
-This library is in developement state, so use it for just testing and suggest some features. In future, I'll push the code to github, so we can make this better by collaboration.
+This library is in development state, so use it for just testing and suggest some features. In future, I'll push the code to github, so we can make this better by collaboration.
 
 ## • Install this library via, `npm i mongo-quick`
 
-## • Define a .env file and put `MONGO_DB_URI=mongodb://localhost/testdb` there(otherwise it won't connect to mongodb). I have set it up with localdb, but you can use any online/offline mongodb
+## • Define a .env file and put `MONGO_DB_URI=mongodb://localhost/testdb` there(otherwise it won't connect to mongodb). I have set it up with local db, but you can use any online/offline mongodb
 
 **Quick tip:**
 
@@ -36,7 +36,7 @@ import * as mq from "mongo-quick";
     itemModel: String, itemAuthor: String
     // So, ^^^^^^ here goes your mongoose schema for a model.
   })
-  // itemCollection2020 is nothing but the model returned by moongoose.model() method.
+  // itemCollection2020 is nothing but the model returned by mongoose.model() method.
 
   console.log(await mq.connectMongoDb_Lazy_InLog())
   // Tip: This automatically picks the database uri of MONGO_DB_URI from .env file.
@@ -70,7 +70,7 @@ import * as mq from "mongo-quick";
     Edges: Number,
     Roundness: String,
     // Note order is IMPORTANT, coz piped method will save the data with same order of the keys of the schema. :)
-    // Try keeping Arrays at top, coz mongodb does that too,  you can obviouly ignore this tip though.
+    // Try keeping Arrays at top, coz mongodb does that too,  you can obviously ignore this tip though.
   });
 
   console.log(await mq.connectMongoDb_Lazy_InLog());
