@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "repository": {
@@ -18,13 +17,13 @@
     "mongoose": "^5.10.0"
   },
   "type": "module",
- "keywords": [
-  "quick mongo"
-  "mongoose",
-  "mongodb",
-  "mongo quick",
-  "mongodb library",
-  "mongo database",
-  "mongodb easy"
+  "keywords": [
+    "quick mongo",
+    "mongoose",
+    "mongodb",
+    "mongo quick",
+    "mongodb library",
+    "mongo database",
+    "mongodb easy"
   ]
 }
