@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
 import dotenv from "dotenv";
+import mongoose from "mongoose";
 dotenv.config()
 export async function connectMongoDb_Lazy_InLog() {
   console.log('--------------');
@@ -21,9 +21,9 @@ export async function connectMongoDb_Lazy_InLog() {
   return 'THANKS: For awaiting connectMongoDb().\n--------------'
 }
 export async function saveToCollection_Lazy(collection, data) {
-  if (typeof collection == "string"){
+  if (typeof collection == "string") {
     collection = useCollection(collection)
-  } 
+  }
   try {
     const savedData = await new collection(data).save();
     console.log("INFO: ", savedData);
