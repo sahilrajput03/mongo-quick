@@ -1,30 +1,49 @@
-# mongo-quick (@development stage)
+# mongo-quick
+
+Table of Contents
+
+- [mongo-quick](#mongo-quick)
+  - [Alert](#alert)
+  - [Usage](#usage)
+  - [Example 1](#example-1)
+  - [Example 2](#example-2)
+  - [Example 3](#example-3)
+  - [Example 4](#example-4)
+  - [Example 5](#example-5)
 
 The motive of this library is to just jump start with mongoose without much crucial  logging for saving data, deleting collections, making models, etc.
 
-This library is in development state, so use it for just testing and suggest some features. In future, I'll push the code to github, so we can make this better by collaboration.
+To request feature for this library or any questions please create respective issue here <https://github.com/sahilrajput03/mongo-quick/issues/new> .
 
-## • Install this library via, `npm i mongo-quick`
+**Quick tip 1:**  Install this library via, `npm i mongo-quick`
 
-## • Define a .env file and put `MONGO_DB_URI=mongodb://localhost/testdb` there(otherwise it won't connect to mongodb). I have set it up with local db, but you can use any online/offline mongodb
-
-**Quick tip:**
+**Quick tip 2:** Run below command to add db's to env file
 
 ```echo MONGO_DB_URI=mongodb://localhost/testdb >> .env```
 
+**Quick tip 3:** Add `"type": "module"` in root object to your package.json file
+
+**Quick tip 4:** Add start script `node.exe --no-warnings index.js` in package.json file.
+
+**Quick tip 5:** Add dev script `nodemon -q -x node.exe --no-warnings index.js` in package.json file.
+
+- In next update we'll no longer need to use  `--no-warning` flag and also, we'll no longer need to use `"type": "module"` too. Be patient for now.
+
 ## Alert
 
-You  need to use "type": "module" in your package.json file, to use the import keyword in your project(for importing mongo-quick like in examples below).
+- Define a .env file and put `MONGO_DB_URI=mongodb://localhost/testdb` there(otherwise it won't connect to mongodb). I have set it up with local db, but you can use any online/offline mongodb
 
-You **don't need to install `mongoose` or `dotenv`**, they are already inscribed this `mongo-quick` library.
+- You  need to use "type": "module" in your package.json file, to use the import keyword in your project(for importing mongo-quick like in examples below).
 
-### Thanks
+- You **don't need to install `mongoose` or `dotenv`**, they are already inscribed this `mongo-quick` library.
 
-## Usage -
+Thanks
 
-## Below example use `mongo-quick` for currently available features
+## Usage
 
-### BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
+Below example use `mongo-quick` for currently available features
+
+BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
 
 ## Example 1
 

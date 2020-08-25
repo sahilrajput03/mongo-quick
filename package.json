@@ -1,29 +1,29 @@
 {
-  "name": "mongo-quick",
-  "version": "1.0.37",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sahilrajput03/mongo-quick"
-  },
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "mongoose": "^5.10.0"
-  },
-  "type": "module",
-  "keywords": [
-    "quick mongo",
-    "mongoose",
-    "mongodb",
-    "mongo quick",
-    "mongodb library",
-    "mongo database",
-    "mongodb easy"
-  ]
+	"name": "mongo-quick",
+	"version": "1.0.38",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sahilrajput03/mongo-quick"
+	},
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"mongoose": "^5.10.0"
+	},
+	"type": "module",
+	"keywords": [
+		"quick mongo",
+		"mongoose",
+		"mongodb",
+		"mongo quick",
+		"mongodb library",
+		"mongo database",
+		"mongodb easy"
+	]
 }
