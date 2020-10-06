@@ -53,7 +53,7 @@ BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
 
 ### For non-typescript users
 
-Start quick with a new typescript project from scratch, like this
+Start quick with a new npm project from scratch, like this
 
 ```bash
 mkdir quick-learnings && cd quick-learnings && npm init -y
