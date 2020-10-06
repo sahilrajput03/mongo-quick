@@ -8,7 +8,7 @@ Table of Contents
   - [New release with no breaking changes plus typescript support now 😉](#new-release-with-no-breaking-changes-plus-typescript-support-now-)
   - [Alert](#alert)
   - [Usage](#usage)
-  - [For typescript users](#for-typescript-users)
+    - [For typescript users](#for-typescript-users)
   - [Example 0](#example-0)
   - [Example 1](#example-1)
   - [Example 2](#example-2)
@@ -50,13 +50,13 @@ Below example use `mongo-quick` for currently available features
 
 BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
 
-## For typescript users
+### For typescript users
 
 Start quick with a new typescript project from scratch, like this
 
 ```bash
 mkdir quick-learnings && cd quick-learnings && npm init -y
-npm i -D typescript
+npm i -D typescript ts-node-dev
 npm i mongo-quick
 echo MONGO_DB_URI=mongodb://localhost/testdb >> .env
 tsc --init
@@ -72,7 +72,7 @@ Configure `tsconfig.json` file like that -
     "target": "ES6",
     "module": "commonjs",
     "outDir": "./lib"
-    // ...other default config form typescript.
+    /* ...other default config from typescript. */
   }
 ```
 
