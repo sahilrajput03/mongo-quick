@@ -1,6 +1,6 @@
 {
   "name": "mongo-quick",
-  "version": "1.1.0",
+  "version": "1.1.34",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -16,7 +16,6 @@
     "dotenv": "^8.2.0",
     "mongoose": "^5.10.0"
   },
-  "type_MyEarlierApproach": "module",
   "keywords": [
     "quick mongo",
     "mongoose",
