@@ -24,7 +24,7 @@ To request feature for this library or any questions please create respective is
 
 **Quick tip 2:** Run below command to add db's address to .env file
 
-`echo MONGO_DB_URI=mongodb://localhost/testdb >> .env` You can specify any your own atlas or mongodb server running on somewhere else.
+`echo MONGO_DB_URI=mongodb://localhost/testdb >> .env` You can specify any your own atlas or mongo database server (mongoDB) running on somewhere else.
 
 ## New release with no breaking changes plus typescript support now 😉
 
@@ -53,7 +53,7 @@ BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
 
 ```js
 import { connectMongoDb_Lazy_InLog, saveToCollection_Lazy, useCollection, deleteCollection_Lazy_InLog, closeConnection, saveToCollection_Lazy_Piped } from "mongo-quick";
-// You can use destructuring styled named imports too, but I recommend serving all of them just from a single default export just like I have done below examples via `mq`.
+// You can use destructuring styled named imports too, but I recommend serving all of them just from a single default export just like I have done in below examples via `mq`.
 ```
 
 ## Example 1
