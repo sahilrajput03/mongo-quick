@@ -8,6 +8,7 @@ Table of Contents
   - [New release with no breaking changes plus typescript support now 😉](#new-release-with-no-breaking-changes-plus-typescript-support-now-)
   - [Alert](#alert)
   - [Usage](#usage)
+  - [For typescript users](#for-typescript-users)
   - [Example 0](#example-0)
   - [Example 1](#example-1)
   - [Example 2](#example-2)
@@ -48,6 +49,34 @@ Now you don't need to make it difficult to start using this awesome library. You
 Below example use `mongo-quick` for currently available features
 
 BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
+
+## For typescript users
+
+Start quick with a new typescript project from scratch, like this
+
+```bash
+mkdir quick-learnings && cd quick-learnings && npm init -y
+npm i -D typescript
+npm i mongo-quick
+echo MONGO_DB_URI=mongodb://localhost/testdb >> .env
+tsc --init
+echo Happy Hacking!!
+```
+
+Note, I recommend using `ts-node-dev server.ts` as `dev` , and `tsc` as `build` script under `scripts` in your `package.json` file for convenient usage.
+
+Configure `tsconfig.json` file like that -
+
+```json
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./lib"
+    // ...other default config form typescript.
+  }
+```
+
+Now, you just need to create a `server.ts` file, and put any of the below **Examples** in there, and use `npm run dev` to see mongo-quick in action.
 
 ## Example 0
 
