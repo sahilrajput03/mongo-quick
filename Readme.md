@@ -63,8 +63,6 @@ echo "console.log('Paste some example in this file from `mongo-quick` docs.')" >
 echo Happy Hacking!!
 ```
 
-Set `dev` script as `nodemon server.js`
-
 Paste any of the below **Examples** in `server.js` file, and use `node server.js` to see mongo-quick in action.
 
 ### For typescript users
