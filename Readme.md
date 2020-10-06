@@ -8,6 +8,7 @@ Table of Contents
   - [New release with no breaking changes plus typescript support now 😉](#new-release-with-no-breaking-changes-plus-typescript-support-now-)
   - [Alert](#alert)
   - [Usage](#usage)
+    - [For non-typescript users](#for-non-typescript-users)
     - [For typescript users](#for-typescript-users)
   - [Example 0](#example-0)
   - [Example 1](#example-1)
@@ -50,6 +51,22 @@ Below example use `mongo-quick` for currently available features
 
 BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
 
+### For non-typescript users
+
+Start quick with a new typescript project from scratch, like this
+
+```bash
+mkdir quick-learnings && cd quick-learnings && npm init -y
+npm i mongo-quick
+echo MONGO_DB_URI=mongodb://localhost/testdb >> .env
+echo "console.log('Paste some example in this file from `mongo-quick` docs.')" >> server.js
+echo Happy Hacking!!
+```
+
+Set `dev` script as `nodemon server.js`
+
+Paste any of the below **Examples** in `server.js` file, and use `node server.js` to see mongo-quick in action.
+
 ### For typescript users
 
 Start quick with a new typescript project from scratch, like this
@@ -60,10 +77,9 @@ npm i -D typescript ts-node-dev
 npm i mongo-quick
 echo MONGO_DB_URI=mongodb://localhost/testdb >> .env
 tsc --init
+echo "console.log('Paste some example in this file from `mongo-quick` docs.')" >> server.ts
 echo Happy Hacking!!
 ```
-
-Note, I recommend using `ts-node-dev server.ts` as `dev` , and `tsc` as `build` script under `scripts` in your `package.json` file for convenient usage.
 
 Configure `tsconfig.json` file like that -
 
@@ -76,7 +92,9 @@ Configure `tsconfig.json` file like that -
   }
 ```
 
-Now, you just need to create a `server.ts` file, and put any of the below **Examples** in there, and use `npm run dev` to see mongo-quick in action.
+Put any of the below **Examples** in `server.ts` file, and use `ts-node-dev server.ts` to see mongo-quick in action. Or you may simply use, `tsnd server.js` to run though.
+
+Tip (`tsnd` is just shorthand for `ts-node-dev`).
 
 ## Example 0
 
