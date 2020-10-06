@@ -72,7 +72,7 @@ Configure `tsconfig.json` file like that -
     "target": "ES6",
     "module": "commonjs",
     "outDir": "./lib"
-    /* ...other default config from typescript. */
+    ...other default config from typescript.
   }
 ```
 
@@ -88,7 +88,8 @@ import { connectMongoDb_Lazy_InLog, saveToCollection_Lazy, useCollection, delete
 ## Example 1
 
 ```js
-import mq from "mongo-quick";
+const mq = require("mongo-quick");
+// import mq from "mongo-quick"; //For typescript users.
 
 (async function () {
   const itemCollection2020 = mq.useCollection("itemCollection2020", {
@@ -118,7 +119,8 @@ import mq from "mongo-quick";
 ## Example 2
 
 ```js
-import mq from "mongo-quick";
+const mq = require("mongo-quick");
+// import mq from "mongo-quick"; //For typescript users.
 
 (async function () {
   const itemCollection2020 = mq.useCollection("itemCollection2020", {
@@ -144,7 +146,8 @@ import mq from "mongo-quick";
 ## Example 3
 
 ```js
-import mq from "mongo-quick";
+const mq = require("mongo-quick");
+// import mq from "mongo-quick"; //For typescript users.
 
 (async function () {
   const itemCollection2020 = mq.useCollection("itemCollection2020");
@@ -168,7 +171,8 @@ import mq from "mongo-quick";
 ## Example 4
 
 ```js
-import mq from "mongo-quick";
+const mq = require("mongo-quick");
+// import mq from "mongo-quick"; //For typescript users.
 
 (async function () {
   console.log(await mq.connectMongoDb_Lazy_InLog());
@@ -190,7 +194,8 @@ import mq from "mongo-quick";
 ## Example 5
 
 ```js
-import mq from "mongo-quick";
+const mq = require("mongo-quick");
+// import mq from "mongo-quick"; //For typescript users.
 
 (async function () {
   console.log(await mq.connectMongoDb_Lazy_InLog());
