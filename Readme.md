@@ -47,9 +47,9 @@ Now you don't need to make it difficult to start using this awesome library. You
 
 ## Usage
 
-Below example use `mongo-quick` for currently available features
+There are examples below using respective features from `mongo-quick` library .
 
-BOOM TAM TAM - 😂Lazy😂 means it needs await before it. :D
+Tip: Remember `methods` having Lazy😂 in their names tells that you need to call them by prefixing them with `await` keyword. :D
 
 ### For non-typescript users
 
@@ -58,12 +58,14 @@ Start quick with a new npm project from scratch, like this
 ```bash
 mkdir quick-learnings && cd quick-learnings && npm init -y
 npm i mongo-quick
+npm i -g nodemon
 echo MONGO_DB_URI=mongodb://localhost/testdb >> .env
-echo "console.log('Paste some example in this file from `mongo-quick` docs.')" >> server.js
-echo Happy Hacking!!
+echo console.log('Paste some example from `mongo-quick` docs in this file.') >> server.js
+nodemon --quiet server.js
+echo Thanks for trying mongo-quick.
 ```
 
-Paste any of the below **Examples** in `server.js` file, and use `node server.js` to see mongo-quick in action.
+Paste any of the below **Examples** in `server.js` file, and see mongo-quick in action.
 
 ### For typescript users
 
@@ -71,12 +73,14 @@ Start quick with a new typescript project from scratch, like this
 
 ```bash
 mkdir quick-learnings && cd quick-learnings && npm init -y
-npm i -D typescript ts-node-dev
+npm i -D typescript
+npm i -g ts-node-dev
 npm i mongo-quick
 echo MONGO_DB_URI=mongodb://localhost/testdb >> .env
 tsc --init
-echo "console.log('Paste some example in this file from `mongo-quick` docs.')" >> server.ts
-echo Happy Hacking!!
+echo console.log('Paste some example from `mongo-quick` docs in this file.') >> server.ts
+ts-node-dev --respawn --clear server.ts
+echo Thanks for trying mongo-quick.
 ```
 
 Configure `tsconfig.json` file like that -
@@ -90,7 +94,7 @@ Configure `tsconfig.json` file like that -
   }
 ```
 
-Put any of the below **Examples** in `server.ts` file, and use `ts-node-dev server.ts` to see mongo-quick in action. Or you may simply use, `tsnd server.js` to run though.
+Put any of the below **Examples** in `server.ts` file, and use ``to see mongo-quick in action. Or you may simply use,`tsnd server.js` to run though.
 
 Tip (`tsnd` is just shorthand for `ts-node-dev`).
 
