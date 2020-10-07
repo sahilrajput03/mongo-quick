@@ -49,7 +49,9 @@ Now you don't need to make it difficult to start using this awesome library. You
 
 There are examples below using respective features from `mongo-quick` library .
 
-Tip: Remember `methods` having Lazy😂 in their names tells that you need to call them by prefixing them with `await` keyword. :D
+**Quick tip 3:** Remember `methods` having `Lazy`😂 in their names tells that you need to call them by prefixing them with `await` keyword. :D
+
+**Quick tip 4:** Remember `methods` having `InLog`😂 in their names tells that you'll receive nice logs about the execution/results of those statements in console. :D
 
 ### For non-typescript users
 
@@ -60,7 +62,7 @@ mkdir quick-learnings && cd quick-learnings && npm init -y
 npm i mongo-quick
 npm i -g nodemon
 echo MONGO_DB_URI=mongodb://localhost/testdb >> .env
-echo console.log('Paste some example from `mongo-quick` docs in this file.') >> server.js
+echo console.log('Paste any example from `mongo-quick` docs in this file.') >> server.js
 nodemon --quiet server.js
 echo Thanks for trying mongo-quick.
 ```
@@ -78,7 +80,7 @@ npm i -g ts-node-dev
 npm i mongo-quick
 echo MONGO_DB_URI=mongodb://localhost/testdb >> .env
 tsc --init
-echo console.log('Paste some example from `mongo-quick` docs in this file.') >> server.ts
+echo console.log('Paste any example from `mongo-quick` docs in this file.') >> server.ts
 ts-node-dev --respawn --clear server.ts
 echo Thanks for trying mongo-quick.
 ```
