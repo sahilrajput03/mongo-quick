@@ -30,11 +30,11 @@ To request feature for this library or any questions please create respective is
 
 ## New release with no breaking changes plus typescript support now 😉
 
-~~**Quick tip 3:** Add `"type": "module"` in root object to your package.json file~~
+~~Quick tip 3: Add `"type": "module"` in root object to your package.json file~~
 
-~~**Quick tip 4:** Add start script `node.exe --no-warnings index.js` in package.json file.~~
+~~Quick tip 4: Add start script `node.exe --no-warnings index.js` in package.json file.~~
 
-~~**Quick tip 5:** Add dev script `nodemon -q -x node.exe --no-warnings index.js` in package.json file.~~
+~~Quick tip 5: Add dev script `nodemon -q -x node.exe --no-warnings index.js` in package.json file.~~
 
 Now you don't need to make it difficult to start using this awesome library. You just install and start using `mongo-quick` in any existing project.
 
