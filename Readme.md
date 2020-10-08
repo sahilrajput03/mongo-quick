@@ -36,7 +36,7 @@ To request feature for this library or any questions please create respective is
 
 ~~Quick tip 5: Add dev script `nodemon -q -x node.exe --no-warnings index.js` in package.json file.~~
 
-Now you don't need to make it difficult to start using this awesome library. You just install and start using `mongo-quick` in any existing project.
+Now you don't need to make it difficult to start using this 👉awesome library. You just install and start using `mongo-quick` in any existing project.
 
 ## Alert
 
@@ -84,6 +84,11 @@ echo console.log('Paste any example from `mongo-quick` docs in this file.') >> s
 ts-node-dev --respawn --clear server.ts
 echo Thanks for trying mongo-quick.
 ```
+
+Note: As I quote from ts-node-dev docs The good thing is that ts-node-dev watches used tsconfig.json file, and will reinitialize compilation on its change, but you have to restart
+the process manually when you update used version of typescript or make any other changes that may effect compilation results.
+
+So, after editing your tsconfig.json file, you must manually restart the ts-node-dev server.
 
 Configure `tsconfig.json` file like that -
 
