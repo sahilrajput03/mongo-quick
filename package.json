@@ -4,7 +4,10 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepub": "c Pre version commit.",
+    "pub": "yarn version --patch && yarn publish",
+    "postpub": "p"
   },
   "author": "",
   "license": "ISC",
